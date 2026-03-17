@@ -56,6 +56,15 @@ main {
     margin-top: -5px;
 }
 
+.main__izquierda--btn{
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
 .main__izquierda--contenedor{
     display: flex;
     justify-content: space-around;
@@ -88,18 +97,17 @@ main {
 .main__derecha {
   max-width: 58.3%;
   height: auto;
-  background-color: blueviolet;
 }
 
 .main__derecha--first{
     font-family: sans-serif;
     padding: 40px 40px 40px 40px;
+    width: auto;
+    height: auto;
 }
 
 .boxs-first{
     background-color: #fff;
-    width: auto;
-    height: auto;
 }
 
 .main__derecha--first-rewards{
@@ -180,7 +188,6 @@ main {
 
 /*              Segunda seccion           */
 .boxs-second{
-    width: auto;
     height: 400px;
     text-align: center;
     font-size: 20px;
@@ -208,12 +215,13 @@ main {
 
 /*              Tercera seccion           */
 
+.boxs-three-all{
+    display: flex;
+}
+
 .boxs-three{
-    width: auto;
-    height: auto;
     text-align: center;
     background-color: white;
-    
 }
 
 .boxs-three span:nth-child(2){
@@ -262,18 +270,20 @@ main {
 }
 
 .boxs-three--derechalogo{
-    width: 19%;
-    margin-top: -370px;
-    margin-left: 40px;
+    width: 40%;
     height: auto;
-    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.boxs-three--derechalogo img{
+    width: 78%;
+    height: auto;
 }
 
 /*              Cuarta seccion           */
 
 .boxs-four{
-    width: auto;
-    height: auto;
     background-color: #edebe9;
     justify-items: center;
 }
@@ -332,5 +342,192 @@ main {
 /*              Quinta seccion           */
 
 .boxs-five{
+    background-color: #fff;
+    text-align: center;
+    justify-items: center;
     
 }
+
+.boxs-five img{
+    width: 35%;
+    height: auto;
+    margin-top: 5px;
+}
+
+.boxs-five div{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.boxs-five span{
+    font-weight: bold;
+    display: block;
+    margin-top: 30px;
+}
+
+
+/*              Sexta seccion           */
+
+.boxs-six{
+    height: 295px;
+    padding: 0;
+    display: flex;
+    background-color: #ecebe5;
+}
+
+.boxs-six img{
+    width: 69%;
+    height: auto;
+}
+
+.boxs-six div:nth-child(1){
+    width: 58%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+
+.boxs-six div:nth-child(2){
+    width: 42%;
+    height: auto;
+    align-content: center;
+    font-size: 17px;
+}
+
+/*              Septimo seccion           */
+
+.boxs-seven{
+    width: auto;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxs-seven img{
+    width: 55%;
+    height: auto;
+}
+
+/*              Pie          */
+
+footer{
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    font-family: sans-serif;
+}
+
+.footer__links{
+      height: 45%;
+      display: flex;
+      gap: 80px;
+      padding: 40px 40px 40px 40px;
+      box-shadow: #ccc 0px -4px 4px -4px;
+}
+
+.footer__columna h3 {
+      font-size: 19px;
+      font-weight: 300;
+      margin-bottom: 20px;
+      color: #1a1a1a;
+}
+    
+.footer__columna ul {
+      list-style: none;
+      padding: 0;
+}
+
+.footer__columna ul li {
+      margin-bottom: 14px;
+}
+
+.footer__columna ul li a {
+      text-decoration: none;
+      color: #777;
+      font-size: 16px;
+}
+
+.footer__abajo{
+    box-shadow: #ccc 0px -4px 4px -4px;
+    background-color: white;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.footer-redes{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.footer-redes a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer-redes a img{
+    width: 44px;
+    height: 44px;
+
+}
+
+.footer-legal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-legal ul{
+    list-style: none;
+    display: flex;
+}
+
+.footer-legal ul li{
+    border-right: #999 1.5px solid;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.footer-legal a{
+    text-decoration: none;
+    color: #999;
+    font-size: 15px;
+}
+
+.footer-cookies{
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #999;
+    font-size: 15px;
+}
+
+.footer-copy{
+    font-size: 14px;
+    color: #999;
+}
+
+
+
+
+
+
+
