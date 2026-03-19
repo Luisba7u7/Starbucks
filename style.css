@@ -3,3 +3,140 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+
+main{
+    max-width: 100%;
+    height: auto;
+    justify-items: center;
+    padding-left: 56px;
+    padding-right: 56px;
+}
+
+.main-contenedor{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.main-contenedor img{
+    width: 100%;
+    height: auto;
+}
+
+.main-contenedor-one{
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+
+.main-contenedor-two{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.main-contenedor strong{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: -0.16px;
+    display: inline-block;
+    justify-self: center;
+
+}
+
+.main-contenedor p{
+    width: 78%;
+    font-size: 21px;
+    line-height: 35px;
+}
+
+.contenedor-one{
+    background-color: #f7f0e4;
+     color: #00754a;
+    
+}
+
+
+.contenedor-one button{
+    color: #00754a;
+    border: #00754a 1px solid;
+    border-radius: 50px;
+    padding: 7px 16px;
+    background: none;
+    font-weight: 600;
+    font-size: 16px;
+    
+}
+
+.contenedor-two{
+    background-color: #d1d1aa;
+    color: #32462f;
+}
+
+.contenedor-three{
+    background-color: #00754a;
+    color: white;
+}
+
+.contenedor-four{
+    background-color: #32462f;
+    color: #d1d1aa;
+}
+
+.contenedor-five{
+    background-color: #00754a;
+    color: #d1d1aa;
+}
+
+.contenedor-six{
+    height: 560px;
+    gap: 30px;
+}
+
+.contenedor-six-one{
+    width: 50%;
+    background-color: #00754a;
+    justify-items: center;
+}
+
+.contenedor-six p{
+    width: 35%;
+    text-align: center;
+    font-size: 23px;
+}
+
+.contenedor-six-one p{
+    color: #d1d1aa;
+
+}
+
+.contenedor-six-one button{
+    border: 1px solid #d1d1aa;
+}
+
+.contenedor-six button{
+    display: flex;
+    justify-self: center;
+    padding: 7px 16px;
+    background: none;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.contenedor-six img{
+    width: 100%;
+    height: 60%;
+}
+
+.contenedor-six-two{
+    width: 50%;
+    background-color: #f7f0e4;
+    justify-items: center;
+}
