@@ -9,6 +9,10 @@ html {
   font-size: 16px;
 }
 
+header{
+    position: static;
+}
+
 
 main{
     width: 100%;
@@ -63,13 +67,19 @@ main{
 
 .bebida{
     min-width: 33.33%;
+    max-width: 50%;
     height: auto;
     padding: 10px;
-    justify-items: center;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    text-align: center;
 }
 
 .bebida div{
-    width: 11.25vw;
+    min-width: 120px;
+    min-height: 120px;
+    width: 11.25;
     height: 11.25vw;
     border-radius: 50%;
     margin-bottom: 10px;
