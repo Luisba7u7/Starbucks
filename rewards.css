@@ -420,6 +420,20 @@ main {
     height: auto;
 }
 
+.main__izquierda--btn a{
+    text-decoration: none;
+}
+
+.inicia-btn a{
+    color: white;
+}
+
+.unete-btn a{
+    color: black;
+}
+
+
+
 
 @media screen and (max-width: 820px) {
 
