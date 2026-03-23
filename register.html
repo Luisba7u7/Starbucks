@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú | Starbucks</title>
     <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="register.css">
     <link rel="stylesheet" href="footer.css">
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/250px-Starbucks_Corporation_Logo_2011.svg.png">
-
+    <title>Starbucks | Registro</title>
 </head>
 <body>
-
     <header>           
         <section class="header__nav-derecha"> 
           <a href="index.html"><img class="header__logo"  src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/250px-Starbucks_Corporation_Logo_2011.svg.png"></a>
@@ -35,77 +32,84 @@
     </header>
 
     <main>
-        <section class="main__menu">
-            <span>¡Disfrútalos!</span>
-            <h2>Conoce nuestras bebidas y alimentos de temporada</h2>
 
-            <section class="menu__nombre">
-                <span>Bebidas</span>
-            </section>
+      <section class="main__izquierda">
+            <h1>Registro</h1>
+      </section>
 
-            <section class="menu__bebidas">
-                <section class="bebida">
-                    <div>
-                        <img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FFlat%20White%20425x425%20sin%20fondo.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop&dpr=2">
-                    </div>
-                    <span>Bebidas calientes</span>
+      <section class="main__derecha">
+        <section class="main__derecha--first box-one">
+          <div>
+          <h3>Información personal</h3>
+          <span>¡Regístrate y comienza a vivir la experiencia Starbucks <br>Rewards™!</span>
+          </div>
+          <section class="formulario">
+                <section class="campo">
+                  <label for="nombre">Nombre(s)</label>
+                  <input type="text" id="name" placeholder="Nombre(s)">
                 </section>
-                <section class="bebida">
-                    <div>
-                        <img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FMocha%20Frapp%20425x425%20sin%20fondo.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop&dpr=2">
-                    </div>
-                    <span>Frappuccino®</span>
+                <section class="campo">
+                  <label for="apellido">Apellido paterno</label>
+                  <input type="text" id="apellido" placeholder="Apellido paterno">
                 </section>
-                <section class="bebida">
-                    <div>
-                        <img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FIced%20Caramel%20Macchiato%20425x425%20sin%20fondo.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop&dpr=2">
-                    </div>
-                    <span>Bebidas Frías</span>
+                <section class="campo">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="Email">
                 </section>
-                <section class="bebida">
-                    <div>
-                        <img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-02%2Fmatcha-green-tea-latte_1.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop&dpr=2">
-                    </div>
-                    <span>Bebidas Base Té</span>
+                <section class="campo">
+                  <label for="email">Confirmar Email</label>
+                  <input type="email" id="email" placeholder="Confirmar Email">
                 </section>
-                <section class="bebida">
-                    <div>
-                        <img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FCold%20Brew%20Vainilla%20Sweet%20Cream%20425x425%20sin%20fondo.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop&dpr=2">
-                    </div>
-                    <span>Cold Brew</span>
+                <section class="campo">
+                  <label for="password">Contraseña</label>
+                  <input type="password" id="password" placeholder="Contraseña" required>
                 </section>
-            </section>
+                <section class="campo">
+                  <label for="password">Confirmar contraseña</label>
+                  <input type="password" id="password" placeholder="Confirmar contraseña" required>
+                </section>
+                
+                <span>Fecha de Nacimiento (Opcional)</span>
+                <section class="campo">
+                  <label for="cumple">Agrega tu fecha de cumpleaños para otorgarte una bebida gratis en el mes de tu cumpleaños</label>
+                  <input type="month" id="cumple" >
+                </section>
 
-            <section class="menu__nombre">
-                <span>Alimentos</span>
-            </section>
+                <h3>Ingresa a Starbucks Rewards</h3>
+                <span>Únete a Starbucks Rewards™ y disfruta de beneficios <br> especiales.</span>
 
-            <section class="menu__bebidas">
-                <section class="bebida">
-                    <div>
-                        <img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-02%2FSandwich%20Pavo%20Panela_1.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop&dpr=2">
-                    </div>
-                    <span>Elige tu complemento favorito</span>
+                <section class="campo">
+                  <label>
+                    <input type="radio" name="tarjeta" value="digital" checked>
+                    Quiero recibir una Starbucks Card digital instantánea
+                  </label>
+                  <label>
+                    <input type="radio" name="tarjeta" value="existente">
+                    Quiero unirme con una Starbucks Card que ya tengo
+                  </label>
                 </section>
-            </section>
-
-            <section class="menu__nombre">
-                <span>Café en grano</span>
-            </section>
-
-            <section class="menu__bebidas">
-                <section class="bebida">
-                    <div>
-                        <img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-08%2FCafe_en%20grano_Chiapas.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop&dpr=2">
-                    </div>
-                    <span>Elige tu café favorito</span>
+                <h3>Términos y Condiciones</h3>
+                <section class="campo">
+                  <label for="deseo">
+                    <input type="checkbox" id="deseo" name="deseo">
+                    Deseo recibir novedades sobre productos y promociones
+                  </label>
                 </section>
-            </section>
+                <section class="campo">
+                  <label for="acepto">
+                    <input type="checkbox" id="acepto" name="acepto">
+                    Acepto los Términos y Condiciones y Aviso de Privacidad
+                  </label>
+                </section>
+                
+                <button type="submit">Registrarme</button>
 
+                </section>
         </section>
-    </main>
-
-     <footer>
+        <section class="main__derecha--first box-two">
+          <h2>¡SER PARTE DE STARBUCKS REWARDS™ ES MUY FÁCIL!</h2>
+        </section>
+        <footer>
             <section class="footer__links">
                 <section class="footer__columna">
                     <h3>Sobre nosotros</h3>
@@ -146,6 +150,9 @@
             </section>
 
           </footer>
+      </section>
+
+    </main>
     
 </body>
 </html>

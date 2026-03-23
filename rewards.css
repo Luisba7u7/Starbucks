@@ -8,7 +8,6 @@ body{
 }
 
 
-
 /*              Contenedor principal           */
 
 main {
@@ -84,7 +83,7 @@ main {
 
 .main__izquierda img{
     width: 340px;
-    margin-left: 250px;
+    align-self: flex-end;
 }
 
 
@@ -285,7 +284,10 @@ main {
 
 .boxs-four{
     background-color: #edebe9;
-    justify-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .boxs-four-content{
@@ -324,7 +326,6 @@ main {
     width: 70%;
     height: auto;
     display: flex;
-    align-items: center;
 }
 
 .boxs-four-content-two div{
@@ -343,8 +344,10 @@ main {
 
 .boxs-five{
     background-color: #fff;
-    text-align: center;
-    justify-items: center;
+    text-align: center;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
@@ -418,10 +421,240 @@ main {
 }
 
 
+@media screen and (max-width: 820px) {
+
+    
+    main {
+        flex-direction: column;
+    }
+
+    .main__izquierda {
+        position: static;
+        width: 100%;
+        min-width: unset;
+        height: auto;
+    }
+
+    .main__derecha {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .main__izquierda--contenedor{
+        flex-direction: column;
+        gap: 10px;
+    }
 
 
+    /* ------------------------------------------
+       SECCION 1 
+       ------------------------------------------ */
+
+    .main__derecha--first-rewards {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .main__derecha--first-rewards span {
+        font-size: 1.25rem;
+    }
+
+    .md__first-rewards--iconos {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    .caja-rewards {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caja-rewards img {
+        width: 100%;
+        height: auto;
+    }
+
+    .caja-rewards span {
+        font-size: 1.150rem;
+        text-align: center;
+    }
 
 
+    /* ------------------------------------------
+       SECCION 2 
+       ------------------------------------------ */
+
+    .boxs-second {
+        height: auto;
+        font-size: 1rem;
+    }
+
+    .boxs-second img {
+        width: 100%;
+    }
 
 
+    /* ------------------------------------------
+       SECCION 3 
+       ------------------------------------------ */
 
+    .boxs-three-all {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxs-three--iconos {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .boxs-three--icono {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .boxs-three--icono img {
+        width: 35%;
+        margin-left: -15px;
+    }
+
+    #gif {
+        width: 55%;
+    }
+
+    .circulo-num {
+        align-self: flex-start;
+    }
+
+    .boxs-three--icono p {
+        font-size: 0.9375rem;
+    }
+
+    .boxs-three--derechalogo {
+        width: 85%;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .boxs-three--derechalogo img {
+        width: 100%;
+    }
+
+
+    /* ------------------------------------------
+       SECCION 4 
+       ------------------------------------------ */
+
+    .boxs-four-content {
+        width: 100%;
+    }
+
+    .boxs-four-content div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0rem;
+    }
+
+    .boxs-four--img-estrella {
+        width: 18%;
+    }
+
+    .boxs-four--img-telefono {
+        width: 25%;
+        flex-shrink: 0;
+    }
+
+    .boxs-four-content-two {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .boxs-four-content-two div {
+        min-width: unset;
+        width: 90%;
+        margin-left: 0;
+        font-size: 1rem;
+    }
+
+    .boxs-four-content-two img {
+        width: 75%;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+
+    /* ------------------------------------------
+       SECCION 5
+       ------------------------------------------ */
+
+    .boxs-five h2 {
+        font-size: 1.125rem;
+    }
+
+    .boxs-five img {
+        width: 65%;
+    }
+
+    .boxs-five p {
+        font-size: 0.9375rem !important;
+    }
+
+    .boxs-five div {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    .boxs-five div img {
+        width: 55%;
+    }
+
+   
+    /* ------------------------------------------
+       SECCION 6 
+       ------------------------------------------ */
+
+    .boxs-six {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5rem 1rem;
+    }
+
+    .boxs-six img {
+        width: 80%;
+    }
+
+    .boxs-six div:nth-child(1) {
+        width: 100%;
+        align-items: center;
+    }
+
+    .boxs-six div:nth-child(2) {
+        width: 100%;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+
+    /* ------------------------------------------
+       SECCION 7 
+       ------------------------------------------ */
+
+    .boxs-seven img {
+        width: 100%;
+    }
+
+}

@@ -95,10 +95,10 @@ nav a:hover {
   padding: 8px 20px;
   border-radius: 50px;
   font-weight: bold;
-  font-size: 0.9rem;
   cursor: pointer;
   border: 2px solid black;
 }
+
  
 .btn--inicia {
   background: transparent;
@@ -107,8 +107,12 @@ nav a:hover {
  
 .btn--unete {
   background: black;
+}
+
+.btn--unete a{
   color: #fff;
 }
+
  
 #menu-hamburguesa{
     display: none;
